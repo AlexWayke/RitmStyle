@@ -21,7 +21,7 @@
     src: url(/Fonts/ProximaNova-Semibold.woff2);
     src: url(/Fonts/ProximaNova-Semibold.woff);
     font-weight: 600;
-    font-style: normal;
+    font-style: normal; 
 }
 @font-face {
     font-family: ProximaNova;
@@ -29,4 +29,156 @@
     src: url(/Fonts/ProximaNova-Bold.woff);
     font-weight: 700;
     font-style: normal;
+}
+
+h1 {
+    font-size: 6.4em;
+    font-family: El messiri;
+    line-height: 90px;
+}
+
+.title {
+    font-family: El messiri;
+}
+// Main styles ====================================
+
+body {
+    background-color: #162831;
+    padding-top: 30px;
+
+    font-family: ProximaNova;
+    font-size: 10px;
+    color: #fff;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.section {
+    margin-bottom: 150px;
+
+    &:first-child {
+        margin-top: 150px;
+    }
+
+    &-title {
+        font-size: 4.2em;
+        font-family: El messiri;
+    }
+}
+
+// Header =========================================
+.header {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+    &-logo {
+    }
+    &-menu {
+
+        &_list {            
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        }
+
+        &_li {
+            display: inline-block;
+            font-size: 1.4em;
+            line-height: 1.9em;
+
+            background-image: linear-gradient(#fff, #fff);
+            background-position: 50% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 1px;
+            transition: background-size .3s;
+
+            &:hover {                
+            background-size: 100% 1px;
+            }
+        }
+    }
+    &-btn {
+        background-color: #018ABE;
+    }
+}
+
+// Main ==============================================
+.main {
+    flex: 1 1 auto;
+}
+
+.footer {
+}
+
+.container {
+    width: 1296px;
+    margin: 0 auto 0;
+}
+// Firstscreen ===================================
+.firstscreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 600px;
+    background: no-repeat center url(/src/bg/1.jpg);
+    border-radius: 10px;
+    overflow: hidden;
+
+    &-subtitle {
+        font-size: 2.4em;
+        margin-bottom: 40px;
+        line-height: 34px;
+
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: -100px;
+            top: 7px;
+            width: 30px;
+            height: 14px;
+            background: no-repeat url(/src/life/left.svg);
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            right: -100px;
+            top: 7px;
+            width: 30px;
+            height: 14px;
+            background: no-repeat url(/src/life/right.svg);
+        }
+    }
+
+    &-title {
+        text-align: center;
+        max-width: 45%;
+        margin-bottom: 210px;
+    }
+}
+
+// Seans =========================================
+.seans {
+}
+.seans-item {
+}
+.seans-title {
+}
+
+// Button=========================================
+.button {
+    font-size: 1.3em;
+    line-height: 1.9em;
+
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 3px;
 }
