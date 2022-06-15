@@ -27,12 +27,12 @@ blockquote, q {
 }
 
 blockquote:before, blockquote:after {
-  content: '';
+  content: "";
   content: none;
 }
 
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -64,7 +64,6 @@ button {
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: ProximaNova;
   src: url(/Fonts/ProximaNova-Light.woff2);
@@ -72,7 +71,6 @@ button {
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
   font-family: ProximaNova;
   src: url(/Fonts/ProximaNova-Semibold.woff2);
@@ -80,7 +78,6 @@ button {
   font-weight: 600;
   font-style: normal;
 }
-
 @font-face {
   font-family: ProximaNova;
   src: url(/Fonts/ProximaNova-Bold.woff2);
@@ -88,7 +85,6 @@ button {
   font-weight: 700;
   font-style: normal;
 }
-
 h1 {
   font-size: 6.4em;
   font-family: El messiri;
@@ -108,34 +104,20 @@ body {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .section {
   margin-bottom: 150px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .section:first-child {
   margin-top: 150px;
 }
-
 .section-title {
   font-size: 4.2em;
   font-family: El messiri;
@@ -143,7 +125,6 @@ body {
   margin-bottom: 100px;
   position: relative;
 }
-
 .section-title::before {
   position: absolute;
   content: "";
@@ -153,7 +134,6 @@ body {
   height: 14px;
   background: no-repeat url(/src/life/leftB.svg);
 }
-
 .section-title::after {
   position: absolute;
   content: "";
@@ -168,81 +148,56 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 50px;
 }
-
 .header-menu_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 50px;
 }
-
 .header-menu_li {
   display: inline-block;
   font-size: 1.4em;
   line-height: 1.9em;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
   background-image: linear-gradient(#fff, #fff);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 0% 1px;
-  -webkit-transition: background-size .3s;
-  transition: background-size .3s;
+  transition: background-size 0.3s;
 }
-
 .header-menu_li:hover {
   background-size: 100% 1px;
 }
-
 .header-btn {
   background-color: #018ABE;
 }
 
 .main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .container {
   width: 1296px;
   margin: 0 auto 0;
 }
+.container-slider {
+  width: 1736px;
+  margin: 0 auto 0;
+}
 
 .firstscreen {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   height: 600px;
   background: no-repeat center url(/src/bg/1.jpg);
   border-radius: 10px;
   overflow: hidden;
 }
-
 .firstscreen-subtitle {
   font-size: 2.4em;
   line-height: 34px;
@@ -250,7 +205,6 @@ body {
   margin-bottom: 40px;
   position: relative;
 }
-
 .firstscreen-subtitle::before {
   position: absolute;
   content: "";
@@ -260,7 +214,6 @@ body {
   height: 14px;
   background: no-repeat url(/src/life/left.svg);
 }
-
 .firstscreen-subtitle::after {
   position: absolute;
   content: "";
@@ -270,7 +223,6 @@ body {
   height: 14px;
   background: no-repeat url(/src/life/right.svg);
 }
-
 .firstscreen-title {
   text-align: center;
   font-weight: 700;
@@ -279,80 +231,48 @@ body {
 }
 
 .seans {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template: auto / 1fr 1fr 1fr;
-      grid-template-areas: 'block-1 block-2 block-3' 'block-1 block-4 block-5';
+  grid-template: auto/1fr 1fr 1fr;
+  grid-template-areas: "block-1 block-2 block-3" "block-1 block-4 block-5";
   gap: 24px;
   width: 100%;
   min-height: 540px;
 }
-
 .seans-item {
   background: no-repeat url(/src/seans/1.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 10px;
   padding: 30px 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-
 .seans-item:hover span {
   background-size: 100% 1px;
 }
-
 .seans-item span {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
   background-image: linear-gradient(#fff, #fff);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 0% 1px;
-  -webkit-transition: background-size .3s;
-  transition: background-size .3s;
+  transition: background-size 0.3s;
 }
-
 .seans-item:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
   grid-area: block-1;
 }
-
 .seans-item:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: block-2;
 }
-
 .seans-item:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: block-3;
 }
-
 .seans-item:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: block-4;
 }
-
 .seans-item:nth-child(5) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
   grid-area: block-5;
 }
-
 .seans-title {
   font-size: 2.4em;
   line-height: 33px;
@@ -363,42 +283,86 @@ body {
 }
 
 .reviews {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
 }
-
-.reviews-item {
-  border-radius: 10px;
-  background-color: #018ABE;
-  width: 636px;
+.reviews-container {
   height: 350px;
-  padding: 50px 60px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
-
+.reviews-track {
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+.reviews-item {
+  background-color: #018ABE;
+  border-radius: 10px;
+  height: 276px;
+  max-width: 500px;
+  padding: 40px 45px;
+  box-sizing: border-box;
+}
+.reviews-item:last-child {
+  margin-right: 0;
+}
+.reviews-item:first-child {
+  margin-left: 0;
+}
 .reviews-name {
-  font-size: 2em;
-  line-height: 28px;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+  line-height: 22px;
   font-weight: 700;
-  margin-bottom: 20px;
 }
-
 .reviews-text {
-  font-size: 1.8em;
-  line-height: 24px;
+  font-size: 1em;
+  line-height: 1.4em;
   font-weight: 300;
   text-align: justify;
 }
-
 .reviews-text span {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+._left {
+  left: 0;
+}
+
+._center {
+  left: 31.68%;
+  width: 37%;
+  height: 100%;
+  padding: 50px 60px;
+  font-size: 1.4em;
+  line-height: 20px;
+}
+
+._right {
+  right: 0;
+}
+
+.btn-prev {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 30%;
+  left: 0;
+  top: 0;
+}
+.btn-next {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 30%;
+  right: 0;
+  top: 0;
 }
 
 .button {

@@ -145,6 +145,11 @@ body {
 .container {
     width: 1296px;
     margin: 0 auto 0;
+
+    &-slider {
+        width: 1736px;
+        margin: 0 auto 0;
+    }
 }
 // Firstscreen ===================================
 .firstscreen {
@@ -257,38 +262,95 @@ body {
     }
 }
 
-// Reviews ====================================
+//  Reviews ===============================
 .reviews {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    &-item {
-        border-radius: 10px;
-        background-color: #018ABE;
-        width: 636px;
+    position: relative;
+
+    &-container {
         height: 350px;
-        padding: 50px 60px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
     }
 
-    &-name {
-        font-size: 2em;
-        line-height: 28px;
+    &-track{
+        height: 100%;
+        width: fit-content;
+        display: flex;
+        align-items: center;        
+        transition: .2s;
+    }
 
+    &-item{
+        background-color: #018ABE;
+        border-radius: 10px;
+        height: 276px;
+        max-width: 500px;
+        padding: 40px 45px;
+        box-sizing:border-box;
+
+        &:last-child{
+            margin-right: 0;
+        }
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+    &-name{
+        margin-bottom: 15px;
+        font-size: 1.6em;
+        line-height: 22px;
         font-weight: 700;
-        margin-bottom: 20px;
     }
-
-    &-text {
-        font-size: 1.8em;
-        line-height: 24px;
+    &-text{
+        font-size: 1em;
+        line-height: 1.4em;
         font-weight: 300;
         text-align: justify;
 
         & span {
             display: inline-block;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
+    }
+
+}
+
+._left{
+    left: 0;
+
+}
+._center{
+    left: 31.68%;
+    width: 37%;
+    height: 100%;
+    padding: 50px 60px;    
+
+    font-size: 1.4em;
+    line-height: 20px;
+}
+._right{
+    right: 0;
+}
+
+.btn {
+    &-prev{
+        position: absolute;
+        z-index: 10;
+        height: 100%;
+        width: 30%;
+        left: 0;
+        top: 0;
+    }
+
+    &-next{
+        position: absolute;
+        z-index: 10;
+        height: 100%;
+        width: 30%;
+        right: 0;
+        top: 0;
     }
 }
 
