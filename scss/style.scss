@@ -56,7 +56,7 @@ body {
 }
 .section {
     margin-bottom: 150px;
-    width: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,6 +145,10 @@ body {
 .container {
     width: 1296px;
     margin: 0 auto 0;
+    &-slider {
+        width: 1736px;
+        margin: 0 auto 0;
+    }
 }
 // Firstscreen ===================================
 .firstscreen {
@@ -258,37 +262,93 @@ body {
 }
 
 // Reviews ====================================
-.reviews {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.reviews{
+    height: 350px;
+    width: 100%;
+    position: relative;
 
     &-item {
-        border-radius: 10px;
-        background-color: #018ABE;
-        width: 636px;
-        height: 350px;
-        padding: 50px 60px;
     }
-
     &-name {
-        font-size: 2em;
-        line-height: 28px;
-
         font-weight: 700;
-        margin-bottom: 20px;
-    }
-
-    &-text {
         font-size: 1.8em;
-        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    &-text {        
         font-weight: 300;
-        text-align: justify;
-
+        font-size: 1.2em;
         & span {
             display: inline-block;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
+    }
+}
+
+// Slick slider===================================
+
+.slick{
+    &-track{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+    }
+    &-list{
+        overflow: hidden;
+        margin-bottom: 60px;
+    }
+    &-slide{
+        display: inline-block;
+        background-color: #018ABE;        
+        height: 276px;
+        width: 500px;
+
+        box-sizing: border-box;
+        padding: 40px 45px;
+        border-radius: 10px;
+        opacity: 0.4;
+    }
+    &-center{
+        height: 350px;
+        width: 636px;
+        transition: ease .3s;
+        font-size: 1.2em;
+        
+        padding: 60px 65px;
+        opacity: 1;
+    }
+    &-arrow{
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        width: 20%;
+        height: 100%;
+        font-size: 0;
+    }
+    &-prev{
+        left: 0;
+    }
+    &-next{
+        right: 0;
+    }
+    &-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        & li{
+            list-style: none;
+        }
+        & button {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+            font-size: 0;
+            background-color: #fff;
+            opacity: 0.4;
+        }
+    }
+    &-active button {
+        opacity: 1;
     }
 }
 
