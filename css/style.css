@@ -169,14 +169,94 @@ body {
   transition: background-size 0.3s;
 }
 .header-menu_li:hover {
-  background-size: 100% 1px;
+  background-size: 100% 2px;
 }
 .header-btn {
   background-color: #018ABE;
+  transition: 0.3s;
+}
+.header-btn:hover {
+  background-color: #16779e;
 }
 
 .main {
   flex: 1 1 auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 600px;
+  width: 100%;
+  margin-bottom: 140px;
+}
+.footer-map {
+  height: 100%;
+  width: 66%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.footer-cards {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-card {
+  background-color: #018ABE;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 30px 45px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21px;
+}
+.footer-card--title {
+  font-weight: 700;
+  font-size: 2.4em;
+  line-height: 34px;
+}
+.footer-card--list {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  flex: 1 1 auto;
+}
+.footer-card--li {
+  font-size: 1.8em;
+  line-height: 19px;
+  margin-left: 38px;
+  position: relative;
+}
+.footer-card--li::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  left: -38px;
+  top: 0;
+}
+.footer-card--li:nth-child(1)::before {
+  background: no-repeat url(/src/footer/items/1.svg);
+  left: -35px;
+}
+.footer-card--li:nth-child(2)::before {
+  background: no-repeat url(/src/footer/items/2.svg);
+}
+.footer-card--li:nth-child(3)::before {
+  background: no-repeat url(/src/footer/items/3.svg);
+}
+.footer-btn {
+  background-color: #fff;
+  color: #018ABE;
+  transition: 0.3s;
+}
+.footer-btn:hover {
+  background-color: #8dcbe4;
 }
 
 .container {
@@ -361,6 +441,125 @@ body {
 }
 .slick-active button {
   opacity: 1;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 110px;
+}
+.about-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about-content {
+  display: flex;
+  justify-content: center;
+  flex: 0 1 auto;
+  flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.about-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-title {
+  max-width: 466px;
+  margin: 10px 0 30px;
+  font-weight: 700;
+  font-size: 2.4em;
+  line-height: 34px;
+}
+.about-text {
+  max-width: 466px;
+  margin-bottom: 10px;
+  font-size: 1.6em;
+  line-height: 23px;
+  font-weight: 300;
+}
+.about-text span {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.prices {
+  box-sizing: border-box;
+  padding: 0 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.prices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 130px 0 40px;
+}
+.prices-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8em;
+  line-height: 26px;
+  position: relative;
+}
+.prices-item::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 9px;
+  left: -38px;
+  background: no-repeat url(/src/life/listLife.svg);
+}
+.prices-item--name {
+  max-width: 250px;
+  display: inline-block;
+  margin-right: auto;
+}
+.prices-item--cost {
+  max-width: 80px;
+  display: inline-block;
+  font-weight: 700;
+  font-family: El messiri;
+}
+.prices-promo {
+  width: 50%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+}
+.prices-promo--img {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.prices-promo--img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.prices-promo--text {
+  font-weight: 700;
+  font-size: 2.1em;
+  line-height: 30px;
 }
 
 .button {
