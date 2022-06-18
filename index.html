@@ -9,6 +9,33 @@
 </head>
 <body>
     <div class="wrapper">
+        <!-- Pop-up -->
+        <div class="form" id="pop_up">
+            <form action="#" id="form" class="form-body">
+                <div class="form-title title">
+                    Заказать звонок
+                </div>
+                <div class="form-subtitle title">
+                    Оставьте заявку на звонок и наш менеджер свяжется с Вами.
+                </div>
+                <div class="form-item">
+                    <label for="formName" class="form-label">Ваше имя*</label>
+                    <input id="formName" data-reg="^[А-Я-а-яё]*$" type="text" name="name" required class="form-input">
+                </div>
+                <div class="form-item">
+                    <label for="formTel" class="form-label">Ваш номер*</label>
+                    <input id="formTel" data-reg="^((\+7|7|8)+([0-9]){10})$" type="tel" name="phone" required class="form-input">
+                </div>
+                <div class="form-item">
+                    <div class="form-checkbox">
+                        <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox-input">
+                        <label for="formAgreement" class="checkbox-label">Настоящим я даю согласие на обработку персональных данных.</label>
+                    </div>
+                </div>
+                <button class="form-button" type="submit">Отправить</button>
+                <div class="form-close" id="close_pop_up">&#10006</div>
+            </form>
+        </div>
         <div class="container">
             <!-- Header -->
             <header class="header">                
@@ -27,8 +54,8 @@
                     </ul>
                 </div>
                 <button>
-                    <div class="header-btn button">                        
-                        Записаться на сеанс
+                    <div class="header-btn">                        
+                        <a href="#" id="open_pop_up" class="button">Записаться на сеанс</a>
                     </div>
                 </button>
             </header>
@@ -245,8 +272,8 @@
                                 </li>
                             </ul>
                             <button>
-                                <div class="footer-btn button">                        
-                                    Записаться на сеанс
+                                <div class="footer-btn">                        
+                                    <a href="#" id="open_pop_up" class="button">Записаться на сеанс</a>
                                 </div>
                             </button>
                         </div>
@@ -266,8 +293,7 @@
                                 </li>
                             </ul>
                             <button>
-                                <div class="footer-btn button">                        
-                                    Записаться на сеанс
+                                <div class="footer-btn"><a href="#" id="open_pop_up" class="button">Записаться на сеанс</a>
                                 </div>
                             </button>
                         </div>
@@ -279,6 +305,7 @@
     </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/source/slick.min.js"></script>
-<script src="/script/script.js"></script>
+<script src="/script/slider.js"></script>
+<script src="/script/popup.js"></script>
 </body>
 </html>
