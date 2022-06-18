@@ -11,7 +11,7 @@
     <div class="wrapper">
         <!-- Pop-up -->
         <div class="form" id="pop_up">
-            <form action="#" id="form" class="form-body">
+            <form action="php/send_mail.php" id="form" class="form-body" method="post">
                 <div class="form-title title">
                     Заказать звонок
                 </div>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="form-item">
                     <label for="formTel" class="form-label">Ваш номер*</label>
-                    <input id="formTel" data-reg="^((\+7|7|8)+([0-9]){10})$" type="tel" name="phone" required class="form-input">
+                    <input id="formTel" data-reg="^((\+7|7|8)+([0-9]){10})$" type="text" name="phone" required class="form-input">
                 </div>
                 <div class="form-item">
                     <div class="form-checkbox">
