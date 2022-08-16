@@ -210,14 +210,14 @@ body {
                 
             }
             &:nth-child(1)::before{
-                background: no-repeat url(/src/footer/items/1.svg);
+                background: no-repeat url(/RitmStyle/src/footer/items/1.svg);
                 left: -35px;
             }
             &:nth-child(2)::before{
-                background: no-repeat url(/src/footer/items/2.svg);
+                background: no-repeat url(/RitmStyle/src/footer/items/2.svg);
             }
             &:nth-child(3)::before{
-                background: no-repeat url(/src/footer/items/3.svg);
+                background: no-repeat url(/RitmStyle/src/footer/items/3.svg);
             }
         }
     }
@@ -247,7 +247,7 @@ body {
     justify-content: flex-end;
 
     height: 600px;
-    background: no-repeat center url(/src/bg/1.jpg);
+    background: no-repeat center url(/RitmStyle/src/bg/1.jpg);
     border-radius: 10px;
     overflow: hidden;
 
@@ -301,7 +301,7 @@ body {
     min-height: 540px;
 
     &-item {
-        background: no-repeat url(/src/seans/1.jpg);
+        background: no-repeat url(/RitmStyle/src/seans/1.jpg);
         background-size: cover;
         background-position: center;
     
